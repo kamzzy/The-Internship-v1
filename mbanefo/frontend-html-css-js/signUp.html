@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylsheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>SignupPage</title>
+    
+    <script src="https://kit.fontawesome.com/7967e81f77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="img">
+        <a> <img src="https://res.cloudinary.com/wonderwoman/image/upload/v1586635697/devcInternship/Desktop_-_5_lnhpus.png"> </a>
+    </div>
+       <!-- <div class="grid-container"> -->
+           <div class="formContainer">
+               <h2> Welcome To Fashion Square</h2>
+               <p>Fashion Square is your one-stop shop for all your clothing needs</p>
+           <form action="" method="" class="form">
+         <!-- <h1>Create Account</h1> -->
+        <div class="name">
+            <input type="text" class="fname" placeholder="Firstname">
+               <input type="text" class="lname" placeholder="Lastname">
+             </div>
+               <div class="details">
+         <input type="email" placeholder="Enter Email">
+         </div>
+         <div class="pass">
+           <input id="pass2" type="password" placeholder="Password" class="active">
+           <span class="fas fa-eye-slash icon">
+           </span>
+            </div>
+            <div><a href="" style="color: blue;">Forgot Password?</a> </div>
+                        <button >Create Account</button>
+            <h5>Already have an account? 
+            <a href="" style="color: blue;">Click here</a></h5>
+                     </form>
+                     </div>
+         </div>
+         <script>
+          var inputPass2 = document.getElementById('pass2'),
+    icon = document.getElementById('icon');
+ 
+   icon.onclick = function () {
+ 
+     if(inputPass2.className == 'active') {
+        inputPass2.setAttribute('type', 'text');
+        icon.className = 'fas fa-eye';
+       inputPass2.className = '';
+ 
+     } else {
+        inputPass2.setAttribute('type', 'password');
+        icon.className = 'fas fa-eye-slash';
+       inputPass2.className = 'active';
+    }
+ 
+   }
+         </script>
+</body>
+</html>
